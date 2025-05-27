@@ -115,6 +115,14 @@
         border-radius: 0 5px 5px 0;
       }
 
+      .warning {
+        background-color: #f8d7da;
+        border-left: 5px solid #dc3545;
+        padding: 15px;
+        margin: 20px 0;
+        border-radius: 0 5px 5px 0;
+      }
+
       footer {
         margin-top: 50px;
         padding-top: 20px;
@@ -141,6 +149,20 @@
         or if your perspective differs on the prioritization, please let me know
         - your input is valuable. If you have time to work on medium or lower
         priority items, please inform me first.
+      </p>
+    </div>
+
+    <div class="warning">
+      <p>
+        <strong>Critical Implementation Note:</strong> The login system must
+        generate access tokens for operator users (like it currently does in the
+        staging environment but not in production). This is essential for the
+        operator role restrictions to work properly.
+      </p>
+      <p>
+        <strong>Deployment Note:</strong> Once the login system generates proper
+        tokens for operators and the important endpoints are restricted, this
+        can be deployed directly to production.
       </p>
     </div>
 
